@@ -9,8 +9,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-
+      <main className='justify-center align-items-center'>
+        <div className="grid grid-cols-4 gap-4">
+          <div>01</div>
+          <div>09</div>
+        </div>
       </main>
     </div>
   )
