@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
 
 export default function Home() {
   return (
@@ -9,10 +11,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='justify-center align-items-center'>
-        <div className="grid grid-cols-4 gap-4">
-          <div>01</div>
+      <main className='justify-center content-center align-items-center my-20 p-12 shadow-lg max-w mx-auto'>
+        <div className="grid grid-cols-2 gap-4">
           <div>09</div>
+          <Image src='/Fitness_Isometric.svg'
+          height={700}
+          width={700}
+          alt='Your name'
+          />
         </div>
       </main>
     </div>
