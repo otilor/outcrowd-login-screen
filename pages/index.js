@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-
 export default function Home() {
   return (
     <div>
@@ -11,12 +10,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='justify-center content-center align-items-center my-20 p-12 shadow-lg max-w mx-auto'>
-        <div className="grid grid-cols-2 gap-4">
-          <div>09</div>
+      <main className='justify-center content-center gap-4 align-items-center my-20 p-12 shadow-lg max-w mx-auto'>
+        <div className="grid grid-cols-2">
+          <div>
+            <h3>Welcome back ✋</h3>
+            <div>
+              <h4>Please enter your details</h4>
+              <button>Login with Apple</button>
+            </div>
+
+            <hr />
+
+            <div>
+              <input placeholder='Email'/>
+              <input placeholder='Password'/>
+            </div>
+
+            <div className='flex justify-between items-center m-5'>
+              <div>
+                <input type='checkbox'/> Remember for 30 days
+              </div>
+              <span className='gap-2'>Forgot password?</span>
+            </div>
+          </div>
           <Image src='/Fitness_Isometric.svg'
-          height={700}
-          width={700}
+          height={900}
+          width={900}
           alt='Your name'
           />
         </div>
