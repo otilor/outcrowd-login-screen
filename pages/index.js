@@ -23,13 +23,12 @@ export default function Home() {
             <hr />
 
             <div className='pt-2'>
-              <div class="w-full">
+              <div class="w-full justify-end items-center relative">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                   Password
                 </label>
-                <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="Email" />
-                <AiOutlineMail />
-                <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+                <input class="appearance-none w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="Email" />
+                <AiOutlineMail className="absolute mr-2 w-10"/>
               </div>
               
               <div class="w-full">
